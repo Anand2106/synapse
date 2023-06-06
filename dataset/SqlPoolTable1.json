@@ -1,0 +1,67 @@
+{
+	"name": "SqlPoolTable1",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [
+			{
+				"name": "EMPLOYEE_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "FIRST_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "LAST_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "EMAIL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PHONE_NUMBER",
+				"type": "nvarchar"
+			},
+			{
+				"name": "HIRE_DATE",
+				"type": "date"
+			},
+			{
+				"name": "JOB_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SALARY",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "COMMISSION_PCT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MANAGER_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DEPARTMENT_ID",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Employee"
+		},
+		"sqlPool": {
+			"referenceName": "pocdedicatedpool",
+			"type": "SqlPoolReference"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

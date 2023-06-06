@@ -1,0 +1,17 @@
+{
+	"name": "EmployeeCreationScript",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE [dbo].[Employee]\n(\n EMPLOYEE_ID INT,\n FIRST_NAME VARCHAR(30),\n LAST_NAME VARCHAR(30),\n EMAIL NVARCHAR(50),\n PHONE_NUMBER NVARCHAR(50),\n HIRE_DATE NVARCHAR(20),\n JOB_ID NVARCHAR(30),\n SALARY DECIMAL(10,2),\n MANAGER_ID INT,\n DEPARTMENT_ID INT\n)\nWITH\n(\n    DISTRIBUTION = HASH (EMPLOYEE_ID),\n    CLUSTERED COLUMNSTORE INDEX\n)\nGO\n\n-- SELECT * FROM [dbo].[Employee]\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "pocdedicatedpool",
+				"poolName": "pocdedicatedpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
