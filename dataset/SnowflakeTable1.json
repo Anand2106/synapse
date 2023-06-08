@@ -1,0 +1,35 @@
+{
+	"name": "SnowflakeTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "NAME",
+				"type": "VARCHAR",
+				"precision": 20,
+				"scale": 0
+			},
+			{
+				"name": "AGE",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "STG_SCHEMA",
+			"table": "STUDENT_DETAILS"
+		}
+	}
+}

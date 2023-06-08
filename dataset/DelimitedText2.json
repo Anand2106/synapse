@@ -1,0 +1,36 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "student_info.csv",
+				"container": "data-container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "age",
+				"type": "String"
+			}
+		]
+	}
+}
